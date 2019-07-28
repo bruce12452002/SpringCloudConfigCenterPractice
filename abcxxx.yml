@@ -7,7 +7,7 @@ server:
 spring:
   profiles: dev
   application:
-    name: my-config-xxx-dev
+    name: my-config-dev
 eureka:
   client:
     service-url:
