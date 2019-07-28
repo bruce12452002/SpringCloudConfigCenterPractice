@@ -11,3 +11,8 @@ spring:
   profiles: uat
   application:
     name: xxx-uat
+---
+spring:
+  profiles: test
+  application:
+    name: xxx-test
