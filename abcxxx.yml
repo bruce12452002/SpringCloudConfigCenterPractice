@@ -1,0 +1,36 @@
+spring:
+  profiles:
+    active: dev
+---
+server:
+  port: 8001
+spring:
+  profiles: dev
+  application:
+    name: my-config-dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://xxx.ooo9051:9051/eureka
+---
+server:
+  port: 8002
+spring:
+  profiles: uat
+  application:
+    name: my-config-uat
+eureka:
+  client:
+    service-url:
+      defaultZone: http://xxx.ooo9051:9051/eureka
+---
+server:
+  port: 8003
+spring:
+  profiles: test
+  application:
+    name: my-config-test
+eureka:
+  client:
+    service-url:
+      defaultZone: http://xxx.ooo9051:9051/eureka
